@@ -569,3 +569,5 @@ D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\System.Web.WebPages.Deploymen
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\System.Web.WebPages.dll
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Service.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Service.pdb

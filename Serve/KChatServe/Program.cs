@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
+using Service.Interface;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using Util.JWT;
 
 
 namespace KChatServe
@@ -63,10 +63,10 @@ namespace KChatServe
 			builder.Logging.ClearProviders();
 			builder.Host.UseNLog();
 			new EFCore.Startup().ConfigureServices(builder.Services);
-			new Util.Startup().ConfigureServices(builder.Services);
-			var jwtHelper = builder.Services.BuildServiceProvider().GetService<IJWTHelper>();
+			new Service.Startup().ConfigureServices(builder.Services);
+			var tokenService = builder.Services.BuildServiceProvider().GetService<ITokenService>();
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-				.AddJwtBearer(jwtHelper.OnConfigration);
+				.AddJwtBearer(tokenService.OnConfigration);
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.

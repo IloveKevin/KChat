@@ -17,6 +17,7 @@
           "Model": "1.0.0",
           "NLog": "5.2.3",
           "NLog.Web.AspNetCore": "5.3.3",
+          "Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3",
           "Swashbuckle.AspNetCore.Filters": "7.0.8",
           "Util": "1.0.0"
@@ -2970,6 +2971,16 @@
           "Model.dll": {}
         }
       },
+      "Service/1.0.0": {
+        "dependencies": {
+          "EFCore": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.21",
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "Service.dll": {}
+        }
+      },
       "Util/1.0.0": {
         "dependencies": {
           "Config": "1.0.0",
@@ -4827,6 +4838,11 @@
       "sha512": ""
     },
     "Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

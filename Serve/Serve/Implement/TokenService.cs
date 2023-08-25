@@ -1,27 +1,22 @@
 ﻿using Config;
-using JWT.Algorithms;
-using JWT.Serializers;
-using JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Service.Interface;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
-using System.Security.Claims;
 
-namespace Util.JWT
+namespace Service.Implement
 {
-    public class JWTHelper : IJWTHelper
+    public class TokenService : ITokenService
     {
         private readonly IOptions<JWTConfigration> _options;
-        public JWTHelper(IOptions<JWTConfigration> options)
+        public TokenService(IOptions<JWTConfigration> options)
         {
             _options = options;
         }
@@ -42,26 +37,31 @@ namespace Util.JWT
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = config.Issuer, // 更换为实际的发行者
                 ValidAudience = config.Audience,
+                AudienceValidator = (audiences, securityToken, validationParameters) =>
+                {
+                    Console.WriteLine(audiences.FirstOrDefault());
+                    return true;
+                },
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.Secret)),
             };
-		}
+        }
 
         /// <summary>
         /// 签发token
         /// </summary>
         public string IssuaToken(long expires, Claim[] claims)
         {
-            var _expires= Convert.ToDouble(expires);
-			var token= new JwtSecurityToken(
-				_options.Value.Issuer,
-				_options.Value.Audience,
-				claims,
-				DateTime.Now,
-				DateTime.Now.AddMinutes(_expires),
-				new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.Value.Secret)), SecurityAlgorithms.HmacSha256)
-				);
-			return new JwtSecurityTokenHandler().WriteToken(token);
-		}
+            var _expires = Convert.ToDouble(expires);
+            var token = new JwtSecurityToken(
+                _options.Value.Issuer,
+                _options.Value.Audience,
+                claims,
+                DateTime.Now,
+                DateTime.Now.AddMinutes(_expires),
+                new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.Value.Secret)), SecurityAlgorithms.HmacSha256)
+                );
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
 
         /// <summary>
         /// 获取token数据
@@ -70,9 +70,9 @@ namespace Util.JWT
         {
             try
             {
-				return new JwtSecurityTokenHandler().ReadToken(token);
-			}
-			catch (Exception ex)
+                return new JwtSecurityTokenHandler().ReadToken(token);
+            }
+            catch (Exception ex)
             {
                 return null;
             }

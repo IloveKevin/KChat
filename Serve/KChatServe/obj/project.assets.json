@@ -4551,6 +4551,21 @@
           "bin/placeholder/Model.dll": {}
         }
       },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EFCore": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.21",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
+      },
       "Util/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -12433,6 +12448,11 @@
       "path": "../Model/Model.csproj",
       "msbuildProject": "../Model/Model.csproj"
     },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Serve/Service.csproj",
+      "msbuildProject": "../Serve/Service.csproj"
+    },
     "Util/1.0.0": {
       "type": "project",
       "path": "../Util/Util.csproj",
@@ -12450,6 +12470,7 @@
       "Model >= 1.0.0",
       "NLog >= 5.2.3",
       "NLog.Web.AspNetCore >= 5.3.3",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "Swashbuckle.AspNetCore.Filters >= 7.0.8",
       "Util >= 1.0.0"
@@ -12490,6 +12511,9 @@
             },
             "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {
               "projectPath": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj"
+            },
+            "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj": {
+              "projectPath": "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj"
             },
             "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
               "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj"
