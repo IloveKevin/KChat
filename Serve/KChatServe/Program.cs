@@ -9,13 +9,14 @@ using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
 using Service.Interface;
+using SignalR;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 
 namespace KChatServe
 {
-    public class Program
+	public class Program
 	{
 		public static void Main(string[] args)
 		{
@@ -64,9 +65,20 @@ namespace KChatServe
 			builder.Host.UseNLog();
 			new EFCore.Startup().ConfigureServices(builder.Services);
 			new Service.Startup().ConfigureServices(builder.Services);
+			new SignalR.Startup().ConfigureServices(builder.Services);
 			var tokenService = builder.Services.BuildServiceProvider().GetService<ITokenService>();
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 				.AddJwtBearer(tokenService.OnConfigration);
+			builder.Services.AddCors(options =>
+			{
+				options.AddDefaultPolicy(builder =>
+				{
+				builder.WithOrigins("http://127.0.0.1:5500") // 允许实际的源
+			   .AllowAnyMethod()
+			   .AllowAnyHeader()
+			   .AllowCredentials(); // 允许凭据
+				});
+			});
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -95,8 +107,8 @@ namespace KChatServe
 			app.UseHttpsRedirection();
 			app.UseAuthentication();
 			app.UseAuthorization();
-
-
+			app.UseCors(); // 使用跨域中间件
+			app.MapHub<ChatHub>("/chathub");
 			app.MapControllers();
 
 			app.Run();

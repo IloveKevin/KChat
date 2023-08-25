@@ -270,3 +270,48 @@
 2023-08-25 16:31:37.7537|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
 2023-08-25 16:31:37.7537|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
 2023-08-25 16:31:37.7537|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 16:56:48.1405|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 16:56:48.1405|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 16:56:48.1405|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 16:56:48.1405|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 16:56:48.1405|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 16:57:04.8061|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 16:57:04.8121|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 16:57:04.8121|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 16:57:04.8121|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 16:57:04.8121|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:01:36.4062|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:01:36.4062|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:01:36.4062|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:01:36.4062|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:01:36.4062|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:04:36.0230|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:04:36.0230|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:04:36.0304|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:04:36.0304|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:04:36.0304|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:11:19.2407|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:11:19.2407|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:11:19.2407|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:11:19.2407|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:11:19.2407|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:11:46.7354|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:11:46.7354|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:11:46.7354|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:11:46.7354|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:11:46.7354|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:18:19.0796|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:18:19.0796|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:18:19.0796|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:18:19.0796|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:18:19.0796|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:20:02.4501|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:20:02.4566|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:20:02.4566|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:20:02.4566|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:20:02.4566|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
+2023-08-25 17:20:41.4807|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7285 |url: |action: 
+2023-08-25 17:20:41.4869|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136 |url: |action: 
+2023-08-25 17:20:41.4869|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2023-08-25 17:20:41.4869|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2023-08-25 17:20:41.4869|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Project\KChat\Serve\KChatServe\ |url: |action: 
