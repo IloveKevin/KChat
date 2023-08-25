@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2nnkeWgJ3cIqiRLr1Yx7xDH8pAN0dCW9TwV2MfhLcOUlBjNBh7K5MAA5bVevgGyGdOkgTo/N1puYAqWKPp1jGA==",
+  "dgSpecHash": "6uSFYX807TFWvHuY8TcptxzQ8y9SYw5XMvFNQiX7aMLvDZXIFDa7PYfPujbVDR1froIGoJ09Jy5OwhW+EMI4qQ==",
   "success": true,
-  "projectFilePath": "D:\\Project\\C#\\KChatServe\\EFCore\\EFCore.csproj",
+  "projectFilePath": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\80441\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\80441\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\C#\\KChatServe\\Model\\Model.csproj": {}
+    "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {}
   },
   "projects": {
-    "D:\\Project\\C#\\KChatServe\\Model\\Model.csproj": {
+    "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\C#\\KChatServe\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Project\\C#\\KChatServe\\Model\\Model.csproj",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\C#\\KChatServe\\Model\\obj\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[7.0.0, )"

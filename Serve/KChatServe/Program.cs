@@ -1,13 +1,17 @@
 using Config;
 using JWT.Builder;
 using KChatServe.Database;
+using KChatServe.Filters;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Util.JWT;
+
 
 namespace KChatServe
 {
@@ -19,7 +23,11 @@ namespace KChatServe
 
 			// Add services to the container.
 
-			builder.Services.AddControllers();
+			builder.Services.AddControllers(
+				option =>
+				{
+					option.Filters.Add<ValidateFilter>();
+				});
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen(c =>
@@ -49,10 +57,13 @@ namespace KChatServe
 			});
 			builder.Services.Configure<SqlServerConfigration>(builder.Configuration.GetSection("SqlServerConfigration"));
 			builder.Services.Configure<JWTConfigration>(builder.Configuration.GetSection("JWTConfigration"));
-			builder.Services.AddDbContext<MySqlServerDataBaseContext>();
+			builder.Services.Configure<MyConfig>(builder.Configuration.GetSection("MyConfig"));
+			builder.Services.Configure<ApiBehaviorOptions>(options =>
+			  options.SuppressModelStateInvalidFilter = true);
 			builder.Logging.ClearProviders();
 			builder.Host.UseNLog();
-			builder.Services.AddScoped<IJWTHelper, JWTHelper>();
+			new EFCore.Startup().ConfigureServices(builder.Services);
+			new Util.Startup().ConfigureServices(builder.Services);
 			var jwtHelper = builder.Services.BuildServiceProvider().GetService<IJWTHelper>();
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 				.AddJwtBearer(jwtHelper.OnConfigration);

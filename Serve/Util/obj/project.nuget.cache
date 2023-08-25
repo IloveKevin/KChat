@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yRCvX138zw3cnvmeiVksopLf7Qm49unVuCMyFPPGobHOyqzowlDh1PlvM9cuqjxD15Tx/V6oNV+IvGtgU0CzLg==",
+  "dgSpecHash": "fzrgKyeo6ELQdLaUoWgVehJXv+0f3uZIJEWN3RKTnsETIiVDVYnld5qWOHfY1Xzz0JOyHct6woWCStMfBneGQQ==",
   "success": true,
-  "projectFilePath": "D:\\Project\\C#\\KChatServe\\Util\\Util.csproj",
+  "projectFilePath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\80441\\.nuget\\packages\\jwt\\10.1.0\\jwt.10.1.0.nupkg.sha512",
     "C:\\Users\\80441\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.21\\microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",

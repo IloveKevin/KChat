@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zqx4COFKvHwK0UoHSun4UHrL2RMt33tC8wfWuFOU2VyDXbr23/nX0S9Vwr6rJ7MwnsptE/JLLRuJHZBEFEZTgQ==",
+  "dgSpecHash": "nfy7xvTGrjV/KS36fvGnN8sMJyZ8EvHHSGdGVvGlPEroWf8IxpSobVgaNx7nvRPAGPrWVQwpsdc7NESt/9cBWA==",
   "success": true,
-  "projectFilePath": "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj",
+  "projectFilePath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

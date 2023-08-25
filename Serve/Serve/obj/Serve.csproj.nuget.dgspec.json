@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\C#\\KChatServe\\NLog\\NLog.csproj": {}
+    "D:\\Project\\KChat\\Serve\\Serve\\Serve.csproj": {}
   },
   "projects": {
-    "D:\\Project\\C#\\KChatServe\\NLog\\NLog.csproj": {
+    "D:\\Project\\KChat\\Serve\\Serve\\Serve.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\C#\\KChatServe\\NLog\\NLog.csproj",
-        "projectName": "NLog",
-        "projectPath": "D:\\Project\\C#\\KChatServe\\NLog\\NLog.csproj",
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Serve\\Serve.csproj",
+        "projectName": "Serve",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Serve\\Serve.csproj",
         "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\C#\\KChatServe\\NLog\\obj\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Serve\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",

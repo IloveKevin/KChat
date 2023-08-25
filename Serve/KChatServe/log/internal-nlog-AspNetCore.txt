@@ -271,3 +271,164 @@
 2023-08-25 11:15:04.0660 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\C#\KChatServe\KChatServe\bin\Debug\net6.0\NLog.config
 2023-08-25 11:15:04.0780 Info Configuration initialized.
 2023-08-25 11:15:04.0780 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\C#\KChatServe\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:46:41.8833 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 11:46:41.8959 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 11:46:41.8959 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 11:46:41.9128 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 11:46:41.9246 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:46:41.9381 Info Configuration initialized.
+2023-08-25 11:46:41.9381 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:49:21.4649 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 11:49:21.4861 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 11:49:21.4861 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 11:49:21.5153 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 11:49:21.5359 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:49:21.5633 Info Configuration initialized.
+2023-08-25 11:49:21.5633 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:50:04.9023 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 11:50:04.9219 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 11:50:04.9219 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 11:50:04.9428 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 11:50:04.9604 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:50:04.9770 Info Configuration initialized.
+2023-08-25 11:50:04.9770 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:56:01.1971 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 11:56:01.2166 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 11:56:01.2174 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 11:56:01.2501 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 11:56:01.2707 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 11:56:01.2908 Info Configuration initialized.
+2023-08-25 11:56:01.2908 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:18:42.9749 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:18:43.0292 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:18:43.0292 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:18:43.0494 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:18:43.0644 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:18:43.0797 Info Configuration initialized.
+2023-08-25 13:18:43.0797 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:19:16.9323 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:19:16.9403 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:19:16.9403 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:19:16.9548 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:19:16.9548 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:19:16.9811 Info Configuration initialized.
+2023-08-25 13:19:16.9811 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:20:45.1744 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:20:45.1744 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:20:45.1744 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:20:45.1981 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:20:45.2096 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:20:45.2236 Info Configuration initialized.
+2023-08-25 13:20:45.2236 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:22:17.2208 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:22:17.2208 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:22:17.2208 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:22:17.2431 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:22:17.2542 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:22:17.2661 Info Configuration initialized.
+2023-08-25 13:22:17.2661 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:27:09.0913 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:27:09.1016 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:27:09.1016 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:27:09.1210 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:27:09.1380 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:27:09.1526 Info Configuration initialized.
+2023-08-25 13:27:09.1526 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:28:03.0534 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:28:03.0624 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:28:03.0624 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:28:03.0773 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:28:03.0773 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:28:03.1003 Info Configuration initialized.
+2023-08-25 13:28:03.1003 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:29:46.8096 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:29:46.8204 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:29:46.8204 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:29:46.8388 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:29:46.8543 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:29:46.8731 Info Configuration initialized.
+2023-08-25 13:29:46.8731 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:36:50.5451 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:36:50.5534 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:36:50.5534 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:36:50.5670 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:36:50.5804 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:36:50.5804 Info Configuration initialized.
+2023-08-25 13:36:50.5804 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:38:42.3331 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:38:42.3477 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:38:42.3477 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:38:42.3780 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:38:42.4026 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:38:42.4240 Info Configuration initialized.
+2023-08-25 13:38:42.4240 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:39:28.9831 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:39:28.9831 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:39:28.9831 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:39:29.0095 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:39:29.0262 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:39:29.0438 Info Configuration initialized.
+2023-08-25 13:39:29.0438 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:39:54.1750 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:39:54.1750 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:39:54.1750 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:39:54.2010 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:39:54.2155 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:39:54.2350 Info Configuration initialized.
+2023-08-25 13:39:54.2350 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:40:12.9352 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:40:12.9447 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:40:12.9447 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:40:12.9590 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:40:12.9710 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:40:12.9710 Info Configuration initialized.
+2023-08-25 13:40:12.9835 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:41:00.4558 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:41:00.4558 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:41:00.4558 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:41:00.4792 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:41:00.4906 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:41:00.5040 Info Configuration initialized.
+2023-08-25 13:41:00.5040 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:41:34.0159 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 13:41:34.0778 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 13:41:34.0778 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 13:41:34.0947 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 13:41:34.1085 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 13:41:34.1085 Info Configuration initialized.
+2023-08-25 13:41:34.1085 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:53:50.6972 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 14:53:50.7036 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 14:53:50.7036 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 14:53:50.7220 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 14:53:50.7346 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:53:50.7346 Info Configuration initialized.
+2023-08-25 14:53:50.7346 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:54:33.5466 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 14:54:33.5466 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 14:54:33.5466 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 14:54:33.5833 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 14:54:33.6037 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:54:33.6226 Info Configuration initialized.
+2023-08-25 14:54:33.6226 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:55:32.3576 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 14:55:32.3635 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 14:55:32.3635 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 14:55:32.3811 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 14:55:32.3926 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:55:32.3926 Info Configuration initialized.
+2023-08-25 14:55:32.3926 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:56:53.9714 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 14:56:53.9714 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 14:56:53.9714 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 14:56:54.0388 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 14:56:54.0564 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 14:56:54.0755 Info Configuration initialized.
+2023-08-25 14:56:54.0755 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 15:16:31.3297 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2023-08-25 15:16:31.3430 Info Registered target NLog.Targets.FileTarget(Name=ownFile-web)
+2023-08-25 15:16:31.3430 Info Registered target NLog.Targets.ConsoleTarget(Name=lifetimeConsole)
+2023-08-25 15:16:31.3651 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-08-25 15:16:31.3799 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config
+2023-08-25 15:16:31.3954 Info Configuration initialized.
+2023-08-25 15:16:31.3954 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=54, FilePath=D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\NLog.config

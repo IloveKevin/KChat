@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\C#\\KChatServe\\EFCore\\EFCore.csproj": {}
+    "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj": {}
   },
   "projects": {
-    "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj": {
+    "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj",
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj",
         "projectName": "Config",
-        "projectPath": "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj",
         "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\C#\\KChatServe\\Config\\obj\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Config\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\Project\\C#\\KChatServe\\EFCore\\EFCore.csproj": {
+    "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\C#\\KChatServe\\EFCore\\EFCore.csproj",
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj",
         "projectName": "EFCore",
-        "projectPath": "D:\\Project\\C#\\KChatServe\\EFCore\\EFCore.csproj",
+        "projectPath": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj",
         "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\C#\\KChatServe\\EFCore\\obj\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj": {
-                "projectPath": "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj"
+              "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj"
               }
             }
           }

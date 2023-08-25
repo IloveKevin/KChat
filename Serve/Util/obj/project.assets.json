@@ -834,11 +834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\C#\\KChatServe\\Util\\Util.csproj",
+      "projectUniqueName": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj",
       "projectName": "Util",
-      "projectPath": "D:\\Project\\C#\\KChatServe\\Util\\Util.csproj",
+      "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj",
       "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\C#\\KChatServe\\Util\\obj\\",
+      "outputPath": "D:\\Project\\KChat\\Serve\\Util\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -855,8 +855,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj": {
-              "projectPath": "D:\\Project\\C#\\KChatServe\\Config\\Config.csproj"
+            "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
+              "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj"
             }
           }
         }

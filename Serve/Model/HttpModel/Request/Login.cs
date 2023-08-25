@@ -13,8 +13,8 @@ namespace Model.HttpModel.Request
         [Required(ErrorMessage = "账号不可以为空")]
         [StringLength(12, MinimumLength = 6, ErrorMessage = "账号长度必须在6-12位之间")]
         public string Account { get; set; }
-        [Required(ErrorMessage = "账号不可以为空")]
-        [StringLength(12, MinimumLength = 6, ErrorMessage = "账号长度必须在6-12位之间")]
+        [Required(ErrorMessage = "密码不可以为空")]
+        [StringLength(12, MinimumLength = 6, ErrorMessage = "密码长度必须在6-12位之间")]
         public string Password { get; set; }
     }
 }
