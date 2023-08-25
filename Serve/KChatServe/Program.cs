@@ -74,11 +74,12 @@ namespace KChatServe
 			{
 				options.AddDefaultPolicy(builder =>
 				{
-				builder.WithOrigins("http://127.0.0.1:5500") // 允许实际的源
-			   .AllowAnyMethod()
-			   .AllowAnyHeader()
-			   .AllowCredentials(); // 允许凭据
-				});
+				builder
+				.AllowAnyMethod()
+				.AllowAnyHeader()
+				.SetIsOriginAllowed(_ => true)
+				.AllowCredentials();
+			});
 			});
 			var app = builder.Build();
 

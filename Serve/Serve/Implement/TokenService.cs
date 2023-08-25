@@ -44,7 +44,25 @@ namespace Service.Implement
                 },
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.Secret)),
             };
-        }
+			options.Events = new JwtBearerEvents
+			{
+				OnMessageReceived = context =>
+				{
+					var accessToken = context.Request.Query["access_token"];
+                    Console.WriteLine(accessToken);
+					// If the request is for our hub...
+					var path = context.HttpContext.Request.Path;
+					Console.WriteLine(path.ToString());
+					if (!string.IsNullOrEmpty(accessToken) &&
+						(path.StartsWithSegments("/chathub")))
+					{
+						// Read the token out of the query string
+						context.Token = accessToken;
+					}
+					return Task.CompletedTask;
+				}
+			};
+		}
 
         /// <summary>
         /// 签发token
