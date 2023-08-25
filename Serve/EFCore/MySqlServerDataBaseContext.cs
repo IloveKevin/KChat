@@ -17,7 +17,7 @@ namespace KChatServe.Database
 		/// </summary>
 		public MySqlServerDataBaseContext()
 		{
-			_connectionString = "server=.\\SQLEXPRESS;uid=sa;pwd=123456;database=kChat;TrustServerCertificate=true";
+			_connectionString = "server=.;uid=sa;pwd=123456;database=kChat;TrustServerCertificate=true";
 		}
 		public MySqlServerDataBaseContext(IOptions<SqlServerConfigration> sqlserverOption,ILogger<MySqlServerDataBaseContext> logger)
 		{

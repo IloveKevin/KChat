@@ -93,7 +93,7 @@ namespace Service.Implement
 
 		public async Task<User?> RegisterAsync(string account, string password)
 		{
-			var user = await _mySqlServerDataBaseContext._users.FindAsync(account);
+			var user = await _mySqlServerDataBaseContext._users.FirstOrDefaultAsync(u=>u.Account==account);
 			if (user == null)
 			{
 				await _mySqlServerDataBaseContext._users.AddAsync(new User()

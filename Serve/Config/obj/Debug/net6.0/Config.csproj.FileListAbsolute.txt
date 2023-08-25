@@ -13,7 +13,6 @@ D:\Project\C#\KChatServe\Config\obj\Debug\net6.0\ref\Config.dll
 D:\Project\KChat\Serve\Config\bin\Debug\net6.0\Config.deps.json
 D:\Project\KChat\Serve\Config\bin\Debug\net6.0\Config.dll
 D:\Project\KChat\Serve\Config\bin\Debug\net6.0\Config.pdb
-D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.csproj.AssemblyReference.cache
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.GeneratedMSBuildEditorConfig.editorconfig
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.AssemblyInfoInputs.cache
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.AssemblyInfo.cs

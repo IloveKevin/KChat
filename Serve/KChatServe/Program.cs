@@ -2,6 +2,7 @@ using Config;
 using JWT.Builder;
 using KChatServe.Database;
 using KChatServe.Filters;
+using KChatServe.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -103,7 +104,7 @@ namespace KChatServe
 					c.SupportedSubmitMethods(SubmitMethod.Get, SubmitMethod.Post, SubmitMethod.Put, SubmitMethod.Delete);
 				});
 			}
-
+			app.UseOptionsMiddleware();
 			app.UseHttpsRedirection();
 			app.UseAuthentication();
 			app.UseAuthorization();
