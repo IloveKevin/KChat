@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hx1b02tgfaMQcWMEKD3VO/jbsa1ymB0MSDa3ZhvJfNj2c0v4XU4e9LPrC/Q6IbzXhL2ap2hAWzDxr8x/TzOAlA==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\C#\\KChatServe\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\80441\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\80441\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\80441\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

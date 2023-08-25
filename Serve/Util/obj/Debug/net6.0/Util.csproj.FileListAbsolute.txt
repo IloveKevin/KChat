@@ -1,0 +1,15 @@
+D:\Project\C#\KChatServe\Util\bin\Debug\net6.0\Util.deps.json
+D:\Project\C#\KChatServe\Util\bin\Debug\net6.0\Util.dll
+D:\Project\C#\KChatServe\Util\bin\Debug\net6.0\Util.pdb
+D:\Project\C#\KChatServe\Util\bin\Debug\net6.0\Config.dll
+D:\Project\C#\KChatServe\Util\bin\Debug\net6.0\Config.pdb
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.csproj.AssemblyReference.cache
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.AssemblyInfoInputs.cache
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.AssemblyInfo.cs
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.csproj.CoreCompileInputs.cache
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.csproj.CopyComplete
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.dll
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\refint\Util.dll
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\Util.pdb
+D:\Project\C#\KChatServe\Util\obj\Debug\net6.0\ref\Util.dll
