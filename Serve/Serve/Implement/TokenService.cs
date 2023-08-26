@@ -1,6 +1,5 @@
 ﻿using Config;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Service.Interface;
@@ -10,7 +9,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Service.Implement
@@ -62,17 +60,6 @@ namespace Service.Implement
 						context.Token = accessToken;
 					}
 					return Task.CompletedTask;
-				},
-				OnChallenge = context =>
-				{
-					context.HandleResponse();
-					context.Response.StatusCode = 401;
-					context.Response.ContentType = "application/json";
-                    context.Response.Headers.Add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
-                    context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
-					var response = new { message = "自定义消息" };
-					var json = JsonSerializer.Serialize(response);
-					return context.Response.WriteAsync(json);
 				}
 			};
 		}

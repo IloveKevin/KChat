@@ -105,11 +105,11 @@ namespace KChatServe
 					c.SupportedSubmitMethods(SubmitMethod.Get, SubmitMethod.Post, SubmitMethod.Put, SubmitMethod.Delete);
 				});
 			}
-			app.UseOptionsMiddleware();
 			app.UseHttpsRedirection();
+			//跨域中间件需要在身份验证和授权之前调用，否则会出现跨域问题
+			app.UseCors(); // 使用跨域中间件
 			app.UseAuthentication();
 			app.UseAuthorization();
-			app.UseCors(); // 使用跨域中间件
 			app.MapHub<ChatHub>("/chathub");
 			app.MapControllers();
 
