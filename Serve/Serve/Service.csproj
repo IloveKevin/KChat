@@ -13,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\EFCore\EFCore.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
-    <ProjectReference Include="..\SignalR\SignalR.csproj" />
     <ProjectReference Include="..\Util\Util.csproj" />
   </ItemGroup>
 
