@@ -574,3 +574,7 @@ D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Service.pdb
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\SignalR.dll
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\SignalR.pdb
 D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+D:\Project\KChat\Serve\KChatServe\bin\Debug\net6.0\StackExchange.Redis.dll

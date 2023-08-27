@@ -12,6 +12,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Util.Enum;
+using Util.Redis;
 
 namespace Service.Implement
 {
@@ -20,14 +22,17 @@ namespace Service.Implement
 		private readonly MySqlServerDataBaseContext _mySqlServerDataBaseContext;
 		private readonly ITokenService _tokenService;
 		private readonly IOptions<JWTConfigration> _jwtOption;
+		private readonly IRedisHelper _redisHelper;
 
 		public AccountService(MySqlServerDataBaseContext mySqlServerDataBaseContext
 			,ITokenService tokenService
-			,IOptions<JWTConfigration> jwtOption)
+			,IOptions<JWTConfigration> jwtOption
+			,IRedisHelper redisHelper)
 		{
 			_mySqlServerDataBaseContext = mySqlServerDataBaseContext;
 			_tokenService = tokenService;
 			_jwtOption = jwtOption;
+			_redisHelper = redisHelper;
 		}
 		Token? IAccountService.Login(string account, string password)
 		{
@@ -42,6 +47,8 @@ namespace Service.Implement
 			};
 			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration,claims);
 			var refreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims);
+			 _redisHelper.Set($"{ERedisKey.AccessToken}_{user.Id}",accessToken);
+			 _redisHelper.Set($"{ERedisKey.RefreshToken}_{user.Id}", refreshToken);
 			return new Token()
 			{
 				AccessToken = accessToken,
@@ -62,6 +69,8 @@ namespace Service.Implement
 			};
 			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration, claims);
 			var refreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims);
+			await _redisHelper.SetAsync($"{ERedisKey.AccessToken}_{user.Id}", accessToken);
+			await _redisHelper.SetAsync($"{ERedisKey.RefreshToken}_{user.Id}", refreshToken);
 			return new Token()
 			{
 				AccessToken = accessToken,

@@ -21,3 +21,4 @@ D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.dll
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\refint\Config.dll
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.pdb
 D:\Project\KChat\Serve\Config\obj\Debug\net6.0\ref\Config.dll
+D:\Project\KChat\Serve\Config\obj\Debug\net6.0\Config.csproj.AssemblyReference.cache

@@ -2,7 +2,6 @@ using Config;
 using JWT.Builder;
 using KChatServe.Database;
 using KChatServe.Filters;
-using KChatServe.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -60,6 +59,7 @@ namespace KChatServe
 			builder.Services.Configure<SqlServerConfigration>(builder.Configuration.GetSection("SqlServerConfigration"));
 			builder.Services.Configure<JWTConfigration>(builder.Configuration.GetSection("JWTConfigration"));
 			builder.Services.Configure<MyConfig>(builder.Configuration.GetSection("MyConfig"));
+			builder.Services.Configure<RedisConfigration>(builder.Configuration.GetSection("RedisConfigration"));
 			builder.Services.Configure<ApiBehaviorOptions>(options =>
 			  options.SuppressModelStateInvalidFilter = true);
 			builder.Logging.ClearProviders();
@@ -67,6 +67,7 @@ namespace KChatServe
 			new EFCore.Startup().ConfigureServices(builder.Services);
 			new Service.Startup().ConfigureServices(builder.Services);
 			new SignalR.Startup().ConfigureServices(builder.Services);
+			new Util.Startup().ConfigureServices(builder.Services);
 			var tokenService = builder.Services.BuildServiceProvider().GetService<ITokenService>();
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 				.AddJwtBearer(tokenService.OnConfigration);

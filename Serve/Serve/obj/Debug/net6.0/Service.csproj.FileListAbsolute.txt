@@ -17,3 +17,5 @@ D:\Project\KChat\Serve\Serve\obj\Debug\net6.0\Service.dll
 D:\Project\KChat\Serve\Serve\obj\Debug\net6.0\refint\Service.dll
 D:\Project\KChat\Serve\Serve\obj\Debug\net6.0\Service.pdb
 D:\Project\KChat\Serve\Serve\obj\Debug\net6.0\ref\Service.dll
+D:\Project\KChat\Serve\Serve\bin\Debug\net6.0\Util.dll
+D:\Project\KChat\Serve\Serve\bin\Debug\net6.0\Util.pdb

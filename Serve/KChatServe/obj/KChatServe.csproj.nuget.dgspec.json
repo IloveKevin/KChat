@@ -39,6 +39,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -341,6 +355,9 @@
               },
               "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {
                 "projectPath": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj"
+              },
+              "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj"
               }
             }
           }
@@ -496,6 +513,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
             }
           },
           "imports": [
