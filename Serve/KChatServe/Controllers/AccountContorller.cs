@@ -58,12 +58,15 @@ namespace KChatServe.Controllers
 			}
 			return Ok("注册成功");
 		}
-
-		[Authorize]
-		[HttpGet]
-		public IActionResult Test()
+		[HttpPost]
+		public async Task<ActionResult<Token>> RefreshToken([FromQuery] string refreshToken)
 		{
-			return Ok("你已经通过了身份验证");
+			var token = await _accountService.RefreshTokenAsync(refreshToken);
+			if(token == null)
+			{
+				return BadRequest("刷新失败");
+			}
+			return Ok(token);
 		}
 	}
 }

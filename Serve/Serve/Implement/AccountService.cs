@@ -121,5 +121,81 @@ namespace Service.Implement
 			return null;
 		}
 
+		public Token? RefreshToken(string refreshToken)
+		{
+			var securityToken = _tokenService.Get(refreshToken);
+			if (securityToken == null)
+			{
+				return null;
+			}
+			var claims = securityToken.Claims;
+			if (claims == null)
+			{
+				return null;
+			}
+			var userId = claims.FirstOrDefault(c => c.Type == "ID")?.Value;
+			if (userId == null)
+			{
+				return null;
+			}
+			var redisToken= _redisHelper.Get($"{ERedisKey.RefreshToken}_{userId}");
+			if (redisToken == null||redisToken!=refreshToken)
+			{
+				return null;
+			}
+			var user = _mySqlServerDataBaseContext._users.FirstOrDefault(u => u.Id == Convert.ToInt32(userId));
+			if (user == null)
+			{
+				return null;
+			}
+			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration, claims.ToArray());
+			var newRefreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims.ToArray());
+			_redisHelper.Set($"{ERedisKey.AccessToken}_{user.Id}", accessToken);
+			_redisHelper.Set($"{ERedisKey.RefreshToken}_{user.Id}", newRefreshToken);
+			return new Token()
+			{
+				AccessToken = accessToken,
+				RefreshToken = newRefreshToken
+			};
+		}
+
+		public async Task<Token?> RefreshTokenAsync(string refreshToken)
+		{
+			var securityToken =  _tokenService.Get(refreshToken);
+			if (securityToken == null)
+			{
+				return null;
+			}
+			var claims = securityToken.Claims;
+			if (claims == null)
+			{
+				return null;
+			}
+			var userId = claims.FirstOrDefault(c => c.Type == "ID")?.Value;
+			if (userId == null)
+			{
+				return null;
+			}
+			var redisToken = await _redisHelper.GetAsync($"{ERedisKey.RefreshToken}_{userId}");
+			if (redisToken == null || redisToken != refreshToken)
+			{
+				return null;
+			}
+			var user = await _mySqlServerDataBaseContext._users.FirstOrDefaultAsync(u => u.Id == Convert.ToInt32(userId));
+			if (user == null)
+			{
+				return null;
+			}
+			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration, claims.ToArray());
+			var newRefreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims.ToArray());
+			await _redisHelper.SetAsync($"{ERedisKey.AccessToken}_{user.Id}", accessToken);
+			await _redisHelper.SetAsync($"{ERedisKey.RefreshToken}_{user.Id}", newRefreshToken);
+			return new Token()
+			{
+				AccessToken = accessToken,
+				RefreshToken = newRefreshToken
+			};
+		}
+
 	}
 }

@@ -100,11 +100,11 @@ namespace Service.Implement
 		/// <summary>
 		/// 获取token数据
 		/// </summary>
-		public SecurityToken? Get(string token)
+		public JwtSecurityToken? Get(string token)
 		{
 			try
 			{
-				return new JwtSecurityTokenHandler().ReadToken(token);
+				return new JwtSecurityTokenHandler().ReadToken(token) as JwtSecurityToken;
 			}
 			catch (Exception ex)
 			{
