@@ -9,8 +9,9 @@ namespace KChatServe.Database
 	public class MySqlServerDataBaseContext : DbContext
 	{
 		public DbSet<User> _users { get; set; }
+		public DbSet<Friend> _friends { get; set; }
+		public DbSet<FriendRequest> _friendRequests { get; set; }
 		private readonly IOptions<SqlServerConfigration>? _sqlserverOption;
-		private readonly ILogger<MySqlServerDataBaseContext>? _logger;
 		private readonly string? _connectionString;
 		/// <summary>
 		/// 这个无参的构造函数仅仅只有在执行数据库迁移时使用
@@ -19,10 +20,9 @@ namespace KChatServe.Database
 		{
 			_connectionString = "server=.;uid=sa;pwd=123456;database=kChat;TrustServerCertificate=true";
 		}
-		public MySqlServerDataBaseContext(IOptions<SqlServerConfigration> sqlserverOption,ILogger<MySqlServerDataBaseContext> logger)
+		public MySqlServerDataBaseContext(IOptions<SqlServerConfigration> sqlserverOption)
 		{
 			_sqlserverOption = sqlserverOption;
-			_logger = logger;
 		}
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

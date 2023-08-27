@@ -4,14 +4,14 @@
     "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj": {}
   },
   "projects": {
-    "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj": {
+    "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj",
-        "projectName": "SignalR",
-        "projectPath": "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj",
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj",
+        "projectName": "Config",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj",
         "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\KChat\\Serve\\SignalR\\obj\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Config\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,293 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj",
+        "projectName": "EFCore",
+        "projectPath": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj",
+        "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj"
+              },
+              "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj",
+        "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Serve\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\EFCore\\EFCore.csproj"
+              },
+              "D:\\Project\\KChat\\Serve\\Model\\Model.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Model\\Model.csproj"
+              },
+              "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj",
+        "projectName": "SignalR",
+        "projectPath": "D:\\Project\\KChat\\Serve\\SignalR\\SignalR.csproj",
+        "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\SignalR\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Serve\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
               "version": "[1.1.0, )"
@@ -47,6 +334,83 @@
             "Microsoft.AspNetCore.SignalR.Core": {
               "target": "Package",
               "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj",
+        "projectName": "Util",
+        "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj",
+        "packagesPath": "C:\\Users\\80441\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\KChat\\Serve\\Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\80441\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
             }
           },
           "imports": [

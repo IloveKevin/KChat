@@ -2030,7 +2030,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Config": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
+          "Util": "1.0.0"
         },
         "compile": {
           "bin/placeholder/EFCore.dll": {}

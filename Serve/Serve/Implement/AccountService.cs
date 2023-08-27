@@ -43,7 +43,7 @@ namespace Service.Implement
 			}
 			var claims = new[]
 			{
-				new Claim("ID",user.Id.ToString()),
+				new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
 			};
 			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration,claims);
 			var refreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims);
@@ -65,7 +65,7 @@ namespace Service.Implement
 			}
 			var claims = new[]
 			{
-				new Claim("ID",user.Id.ToString()),
+				new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
 			};
 			var accessToken = _tokenService.IssuaToken(_jwtOption.Value.AccessExpiration, claims);
 			var refreshToken = _tokenService.IssuaToken(_jwtOption.Value.RefreshExpiration, claims);
@@ -133,7 +133,7 @@ namespace Service.Implement
 			{
 				return null;
 			}
-			var userId = claims.FirstOrDefault(c => c.Type == "ID")?.Value;
+			var userId = claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 			if (userId == null)
 			{
 				return null;
@@ -171,7 +171,7 @@ namespace Service.Implement
 			{
 				return null;
 			}
-			var userId = claims.FirstOrDefault(c => c.Type == "ID")?.Value;
+			var userId = claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
 			if (userId == null)
 			{
 				return null;

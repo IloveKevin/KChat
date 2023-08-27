@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Config\Config.csproj" />
+    <ProjectReference Include="..\Util\Util.csproj" />
   </ItemGroup>
 
 </Project>

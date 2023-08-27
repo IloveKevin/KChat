@@ -11,4 +11,17 @@ namespace Util.Enum
 		AccessToken,
 		RefreshToken,
 	}
+
+	public enum EFriendRequestStatus
+	{
+		Waiting,
+		Accepted,
+		Rejected,
+	}
+
+	public enum ESignalRMessageType
+	{
+		FriendOnline,
+		FriendOffline,
+	}
 }

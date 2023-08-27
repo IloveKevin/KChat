@@ -63,7 +63,7 @@ namespace Service.Implement
 				OnTokenValidated = async context =>
 				{
 					var jwtToken = context.SecurityToken as JwtSecurityToken;
-					var userId = jwtToken?.Claims.FirstOrDefault(c => c.Type == "ID");
+					var userId = jwtToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
 					if (userId == null)
 					{
 						context.Fail("Invalid token");

@@ -99,6 +99,9 @@
             "projectReferences": {
               "D:\\Project\\KChat\\Serve\\Config\\Config.csproj": {
                 "projectPath": "D:\\Project\\KChat\\Serve\\Config\\Config.csproj"
+              },
+              "D:\\Project\\KChat\\Serve\\Util\\Util.csproj": {
+                "projectPath": "D:\\Project\\KChat\\Serve\\Util\\Util.csproj"
               }
             }
           }
