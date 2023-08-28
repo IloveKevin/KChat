@@ -11,6 +11,7 @@ namespace KChatServe.Database
 		public DbSet<User> _users { get; set; }
 		public DbSet<Friend> _friends { get; set; }
 		public DbSet<FriendRequest> _friendRequests { get; set; }
+		public DbSet<Message> _messages { get; set; }
 		private readonly IOptions<SqlServerConfigration>? _sqlserverOption;
 		private readonly string? _connectionString;
 		/// <summary>

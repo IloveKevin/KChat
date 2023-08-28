@@ -17,5 +17,7 @@ namespace Service.Interface
         Task<User?> RegisterAsync(string account, string password);
         Token? RefreshToken(string refreshToken);
         Task<Token?> RefreshTokenAsync(string refreshToken);
+        Task<bool> UpdateNickName(long userId,string nickName);
+        Task<List<UserInfo>> GetUserInfo(List<long> usersId);
     }
 }

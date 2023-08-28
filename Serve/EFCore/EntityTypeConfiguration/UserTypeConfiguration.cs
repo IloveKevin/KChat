@@ -17,6 +17,7 @@ namespace EFCore.EntityTypeConfiguration
 			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Account).HasMaxLength(12).IsRequired();
 			builder.Property(x => x.Password).HasMaxLength(12).IsRequired();
+			builder.Property(x => x.NickName).HasMaxLength(12).IsRequired();
 		}
 	}
 }

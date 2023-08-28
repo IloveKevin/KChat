@@ -23,5 +23,19 @@ namespace Util.Enum
 	{
 		FriendOnline,
 		FriendOffline,
+		DeleteFriend,
+		NewFriend,
+		NewFriendRequest,
+		NewChatMessage,
+		RetractChatMessage,
+		ReadChatMessage,
+	}
+
+	public enum EChatMessageStatus
+	{
+		Waiting,
+		UnSeen,
+		Seen,
+		Retracted
 	}
 }

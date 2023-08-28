@@ -2,6 +2,7 @@
 using KChatServe.Database;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -10,10 +11,12 @@ using Model.HttpModel.Response;
 using Model.JWT;
 using Service.Implement;
 using Service.Interface;
+using SignalR;
 using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Util.SignalR;
 
 namespace KChatServe.Controllers
 {
@@ -21,20 +24,13 @@ namespace KChatServe.Controllers
 	[Route("api/[controller]/[action]")]
 	public class AccountContorller : ControllerBase
 	{
-		private readonly MySqlServerDataBaseContext _mySqlServerDataBaseContext;
-		private readonly ITokenService _tokenService;
-		private readonly IOptions<JWTConfigration> _jwtOption;
 		private readonly IAccountService _accountService;
+		private readonly IHubContext<ChatHub> _chatHub;
 
-		public AccountContorller(MySqlServerDataBaseContext mySqlServerDataBaseContext
-			, ITokenService tokenService
-			, IOptions<JWTConfigration> jwtOptions
-			,IAccountService accountService)
+		public AccountContorller(IAccountService accountService,IHubContext<ChatHub> chatHub)
 		{
-			_mySqlServerDataBaseContext = mySqlServerDataBaseContext;
-			_tokenService = tokenService;
-			_jwtOption = jwtOptions;
 			_accountService = accountService;
+			_chatHub = chatHub;
 		}
 
 		[HttpPost]
@@ -59,7 +55,7 @@ namespace KChatServe.Controllers
 			return Ok("注册成功");
 		}
 		[HttpPost]
-		public async Task<ActionResult<Token>> RefreshToken([FromQuery] string refreshToken)
+		public async Task<ActionResult<Token>> RefreshToken([FromBody] string refreshToken)
 		{
 			var token = await _accountService.RefreshTokenAsync(refreshToken);
 			if(token == null)
@@ -67,6 +63,26 @@ namespace KChatServe.Controllers
 				return BadRequest("刷新失败");
 			}
 			return Ok(token);
+		}
+
+		[Authorize]
+		[HttpPost]
+		public async Task<ActionResult<bool>> UpdateNickName([FromBody] string nickName)
+		{
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+			var result = await _accountService.UpdateNickName(userId, nickName);
+			if(!result)
+			{
+				return BadRequest("修改失败");
+			}
+			return Ok(true);
+		}
+
+		[Authorize]
+		[HttpGet]
+		public async Task<ActionResult<UserInfo>> GetUsersInfo([FromQuery] List<long> usersId)
+		{
+			return Ok(await _accountService.GetUserInfo(usersId));
 		}
 	}
 }

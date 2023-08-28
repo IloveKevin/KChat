@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Util.Enum;
 using Util.Redis;
+using Util.SignalR;
 
 namespace Service.Implement
 {
@@ -197,5 +198,21 @@ namespace Service.Implement
 			};
 		}
 
+		public async Task<bool> UpdateNickName(long userId, string nickName)
+		{
+			var user= await _mySqlServerDataBaseContext._users.FirstOrDefaultAsync(u => u.Id == userId);
+			if (user != null)
+			{
+				user.NickName = nickName;
+				await _mySqlServerDataBaseContext.SaveChangesAsync();
+				return true;
+			}
+			return false;
+		}
+
+		public async Task<List<UserInfo>> GetUserInfo(List<long> usersId)
+		{
+			return await _mySqlServerDataBaseContext._users.Where(u => usersId.Contains(u.Id)).Select(u => new UserInfo() { Id=u.Id,NickName=u.NickName,Online= SignalRHelper.IsOnline(u.Id)}).ToListAsync();
+		}
 	}
 }

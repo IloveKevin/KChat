@@ -60,6 +60,7 @@ namespace KChatServe
 			builder.Services.Configure<JWTConfigration>(builder.Configuration.GetSection("JWTConfigration"));
 			builder.Services.Configure<MyConfig>(builder.Configuration.GetSection("MyConfig"));
 			builder.Services.Configure<RedisConfigration>(builder.Configuration.GetSection("RedisConfigration"));
+			builder.Services.Configure<ChatConfigration>(builder.Configuration.GetSection("ChatConfigration"));
 			builder.Services.Configure<ApiBehaviorOptions>(options =>
 			  options.SuppressModelStateInvalidFilter = true);
 			builder.Logging.ClearProviders();
