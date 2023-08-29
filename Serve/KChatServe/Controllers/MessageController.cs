@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Options;
 using Service.Interface;
 using SignalR;
+using System.Security.Claims;
 using Util.Enum;
 using Util.SignalR;
 
@@ -29,7 +30,7 @@ namespace KChatServe.Controllers
 		[HttpPost]
 		public async Task<ActionResult<Message>> AddMessage([FromBody] long friendId, [FromBody] string content)
 		{
-			var userId = long.Parse(User.Identity.Name);
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			var message = await _messageService.AddMessage(userId, friendId, content);
 			if (SignalRHelper.IsOnline(userId))
 			{
@@ -43,7 +44,7 @@ namespace KChatServe.Controllers
 		[HttpGet]
 		public async Task<ActionResult<List<Message>>> GetChatHistory([FromQuery] long friendId, [FromQuery] long start, [FromQuery] int size)
 		{
-			var userId = long.Parse(User.Identity.Name);
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			var messages = await _messageService.GetHistoryMessages(userId, friendId, start, size);
 			return Ok(messages);
 		}
@@ -52,7 +53,7 @@ namespace KChatServe.Controllers
 		[HttpGet]
 		public async Task<ActionResult<List<Message>>> GetUnReadMessages()
 		{
-			var userId = long.Parse(User.Identity.Name);
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			var messages = await _messageService.GetUnReadMessages(userId);
 			messages.ForEach(async x => await _messageService.SendMessage(x.Id));
 			return Ok(messages);
@@ -62,7 +63,7 @@ namespace KChatServe.Controllers
 		[HttpPost]
 		public async Task<ActionResult<bool>> RetractMessage([FromBody] long messageId)
 		{
-			var userId = long.Parse(User.Identity.Name);
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			var result = await _messageService.RetractMessage(userId, messageId);
 			if (result != null)
 			{
@@ -76,7 +77,7 @@ namespace KChatServe.Controllers
 		[HttpPost]
 		public ActionResult ReadMessages([FromBody] List<long> messageIds)
 		{
-			var userId = long.Parse(User.Identity.Name);
+			var userId = long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			messageIds.ForEach(async x =>
 			{
 				var result = await _messageService.ReadMessage(userId, x);
